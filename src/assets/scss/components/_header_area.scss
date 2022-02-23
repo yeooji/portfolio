@@ -1,0 +1,85 @@
+.Header {
+  width: 100%;
+  padding: 15px 0;
+  /* background-color: #585858; */
+
+  .header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .logo {
+    display: inline-block;
+    position: relative;
+
+    a {
+      display: block;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      overflow: hidden;
+      background: url(./assets/emoji.png) no-repeat 75% 16%;
+      background-size: 70px;
+    }
+  }
+
+  .chat-buble {
+    position: absolute;
+    top: 8px;
+    left: 60px;
+    width: 120px;
+    line-height: 30px;
+    font-size: 1.3rem;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #0c82fe;
+    color: #fff;
+    z-index: 100;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: -5px;
+      border-top: 0px solid transparent;
+      border-left: 15px solid transparent;
+      border-right: 0px solid transparent;
+      border-bottom: 15px solid #0c82fe;
+    }
+  }
+
+  .gnb li {
+    display: inline-block;
+    margin: 0 8px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      display: block;
+      position: relative;
+      padding-bottom: 5px;
+      font-size: 1.5rem;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: #000;
+        transition: all .3s;
+      }
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+}

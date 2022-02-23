@@ -8,11 +8,17 @@ const Header = () => {
                 <span className="chat-buble">Hello World 👋</span>
                 <nav className="gnb">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Project</a></li>
-                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">🏡 Home</a></li>
+                        <li><a href="#">💻 Project</a></li>
+                        <li><a href="#">📝 Blog</a></li>
+                        <li><a href="#">🐱 Github</a></li>
                     </ul>
                 </nav>
+                {/*<a href="#" className="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>*/}
             </div>
         </header>
     );

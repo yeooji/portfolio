@@ -1,0 +1,23 @@
+.Content {
+    .content-wrap {
+        width: 90%;
+        max-width: 1000px;
+        margin: 0 auto;
+        background-color: #fff;
+    }
+
+    .page-info {
+        padding: 50px 0;
+
+        .main-title {
+            font-size: 5rem;
+            margin-bottom: 10px;
+        }
+
+        .sub-title {
+            color: #585858;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+    }
+}
