@@ -64,41 +64,32 @@ table caption {
   padding: 15px 0;
   /* background-color: #585858; */
 }
-
 .Header .header-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
   width: 90%;
   max-width: 1000px;
   margin: 0 auto;
 }
-
 .Header .logo {
   display: inline-block;
   position: relative;
   /* a {
-      display: block;
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      overflow: hidden;
-      background: url(./assets/emoji.png) no-repeat 50% 16%;
-      background-size: 70px;
-    } */
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: url(./assets/emoji.png) no-repeat 50% 16%;
+    background-size: 70px;
+  } */
 }
-
 .Header .logo .chat-buble {
   /* position: relative;
-      top: 8px;
-      left: 60px; */
+  top: 8px;
+  left: 60px; */
   display: block;
   width: 130px;
   line-height: 30px;
@@ -110,9 +101,8 @@ table caption {
   color: #fff;
   z-index: 100;
 }
-
 .Header .logo .chat-buble::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 10px;
   left: -5px;
@@ -121,35 +111,29 @@ table caption {
   border-right: 0px solid transparent;
   border-bottom: 15px solid #0c82fe;
 }
-
 .Header .gnb li {
   display: inline-block;
   margin: 0 8px;
 }
-
 .Header .gnb li:last-child {
   margin-right: 0;
 }
-
 .Header .gnb li a {
   display: block;
   position: relative;
   padding-bottom: 5px;
   font-size: 0.9rem;
 }
-
 .Header .gnb li a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 0;
   height: 1px;
   background-color: #000;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  transition: all 0.3s;
 }
-
 .Header .gnb li a:hover::after {
   width: 100%;
 }
@@ -160,16 +144,13 @@ table caption {
   margin: 0 auto;
   background-color: #fff;
 }
-
 .Content .page-info {
   padding: 50px 0;
 }
-
 .Content .page-info .main-title {
   font-size: 5rem;
   margin-bottom: 10px;
 }
-
 .Content .page-info .sub-title {
   color: #585858;
   font-size: 1.3rem;
@@ -181,34 +162,29 @@ table caption {
   display: block;
   margin-bottom: 32px;
   /* .p1 {
-        margin: 0px 0px 16px;
-        transition: inherit;
-        color: #868e96;
-        white-space: normal;
-        text-overflow: clip;
-        overflow: visible;
-        text-align: left;
-        font-size: 0.9rem;
-        font-weight: 300;
-        line-height: 1.5;
-        word-break: normal;
-    } */
+      margin: 0px 0px 16px;
+      transition: inherit;
+      color: #868e96;
+      white-space: normal;
+      text-overflow: clip;
+      overflow: visible;
+      text-align: left;
+      font-size: 0.9rem;
+      font-weight: 300;
+      line-height: 1.5;
+      word-break: normal;
+  } */
 }
-
 .divv .title {
-  /* color: #495057; */
-  color: #1c7ed6;
-  -webkit-transition: inherit;
+  color: #495057;
   transition: inherit;
   font-size: 1.4rem;
   margin-top: 0px;
   margin-bottom: 4px;
-  font-weight: bold;
+  font-weight: 400;
 }
-
 .divv .explan {
   margin: 0px;
-  -webkit-transition: inherit;
   transition: inherit;
   color: #495057;
   white-space: normal;
@@ -226,20 +202,16 @@ table caption {
   padding-left: 16px;
   border-left: 1px dashed #dee2e6;
 }
-
 .project-item .title {
   color: #495057;
-  -webkit-transition: inherit;
   transition: inherit;
   font-size: 1.2rem;
   font-weight: 400;
   margin-top: 0px;
   margin-bottom: 4px;
 }
-
 .project-item .period {
   margin: 0px 0px 16px;
-  -webkit-transition: inherit;
   transition: inherit;
   color: #868e96;
   white-space: normal;
@@ -251,10 +223,8 @@ table caption {
   line-height: 1.5;
   word-break: normal;
 }
-
 .project-item .explan {
   margin: 8px 0px 0px;
-  -webkit-transition: inherit;
   transition: inherit;
   color: var(--textNormal);
   white-space: normal;
@@ -266,13 +236,11 @@ table caption {
   line-height: 1.5;
   word-break: normal;
 }
-
 .project-item .performance {
   margin: 8px 0px 0px;
   padding: 12px 0px 12px 0rem;
   list-style: none;
 }
-
 .project-item .performance li {
   position: relative;
   padding-left: 16px;
@@ -282,7 +250,6 @@ table caption {
   font-weight: 300;
   color: var(--textNormal);
 }
-
 .project-item .performance li::before {
   position: absolute;
   left: 0px;
@@ -290,18 +257,13 @@ table caption {
   content: "•";
   color: #578cdc;
 }
-
 .project-item .tool {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 0px;
   padding: 0px;
   list-style: none;
 }
-
 .project-item .tool li {
   margin: 2px;
   padding: 4px 10px;
@@ -318,11 +280,11 @@ table caption {
   padding: 30px 0;
   font-size: 0.5em;
 }
-
 .Footer .footer-wrap {
   width: 90%;
   max-width: 1000px;
   margin: 0 auto;
   color: #bbb;
 }
+
 /*# sourceMappingURL=App.css.map */

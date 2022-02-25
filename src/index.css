@@ -1,13 +1,39 @@
+@font-face {
+  font-family: 'Spoqa Han Sans Neo';
+  font-style: normal;
+  font-weight: 100;
+  src: url("./assets/fonts/SpoqaHanSansNeo-Thin.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: 'Spoqa Han Sans Neo';
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/SpoqaHanSansNeo-Regular.woff2") format('woff2');
+}
+
+
+@font-face {
+  font-family: 'Spoqa Han Sans Neo';
+  font-style: normal;
+  font-weight: 500;
+  src: url("./assets/fonts/SpoqaHanSansNeo-Medium.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: 'Spoqa Han Sans Neo';
+  font-style: normal;
+  font-weight: bold;
+  src: url("./assets/fonts/SpoqaHanSansNeo-Bold.woff2") format('woff2');
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Spoqa Han Sans Neo', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  /* -webkit-print-color-adjust: exact; */
+  font-weight: normal;
+  color: #333333;
 }

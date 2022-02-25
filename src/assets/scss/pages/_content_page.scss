@@ -21,3 +21,132 @@
         }
     }
 }
+
+/* 뗴어내기  */
+
+.divv {
+    display: block;
+    margin-bottom: 32px;
+
+    .title {
+        /* color: #495057; */
+        color: #1c7ed6;
+        transition: inherit;
+        font-size: 1.4rem;
+        margin-top: 0px;
+        margin-bottom: 4px;
+        font-weight: bold;
+    }
+
+    /* .p1 {
+        margin: 0px 0px 16px;
+        transition: inherit;
+        color: #868e96;
+        white-space: normal;
+        text-overflow: clip;
+        overflow: visible;
+        text-align: left;
+        font-size: 0.9rem;
+        font-weight: 300;
+        line-height: 1.5;
+        word-break: normal;
+    } */
+
+    .explan {
+        margin: 0px;
+        transition: inherit;
+        color: #495057;
+        white-space: normal;
+        text-overflow: clip;
+        overflow: visible;
+        text-align: left;
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 1.5;
+        word-break: break-all;
+    }
+}
+
+.project-item {
+    margin-bottom: 48px;
+    padding-left: 16px;
+    border-left: 1px dashed #dee2e6;
+
+    .title {
+        color: #495057;
+        transition: inherit;
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-top: 0px;
+        margin-bottom: 4px;
+    }
+    .period {
+        margin: 0px 0px 16px;
+        transition: inherit;
+        color: #868e96;
+        white-space: normal;
+        text-overflow: clip;
+        overflow: visible;
+        text-align: left;
+        font-size: 0.9rem;
+        font-weight: 300;
+        line-height: 1.5;
+        word-break: normal;
+    }
+    .explan {
+        margin: 8px 0px 0px;
+        transition: inherit;
+        color: var(--textNormal);
+        white-space: normal;
+        text-overflow: clip;
+        overflow: visible;
+        text-align: left;
+        font-size: 0.9rem;
+        font-weight: 300;
+        line-height: 1.5;
+        word-break: normal;
+    }
+
+    .performance {
+        margin: 8px 0px 0px;
+        padding: 12px 0px 12px 0rem;
+        list-style: none;
+
+        li {
+            position: relative;
+            padding-left: 16px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            font-size: 0.9rem;
+            font-weight: 300;
+            color: var(--textNormal);
+
+            &::before {
+                position: absolute;
+                left: 0px;
+                display: inline-block;
+                content: "•";
+                color: #578cdc; 
+            }
+        }
+    }
+
+    .tool {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+
+        li {
+            margin: 2px;
+            padding: 4px 10px;
+            font-size: 0.8rem;
+            font-weight: 300;
+            background-color: #e7f5ff;
+            color: #1c7ed6;
+            border-radius: 4px;
+            line-height: 1.3;
+        }
+    }
+}

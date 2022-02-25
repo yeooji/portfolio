@@ -4,8 +4,8 @@ const Project = () => {
     return(
         <div className="Project">
             <div className="page-info">
-                <h2 className="main-title">Project</h2>
-                <em className="sub-title">My Recent Works</em>
+                {/* <h2 className="main-title">Project &#xE001;</h2>
+                <em className="sub-title">My Recent Works</em> */}
             </div>
             <ProjectList />
         </div>
