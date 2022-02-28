@@ -1,10 +1,18 @@
-import Project from "./Project/Project";
+import { Route, Routes } from 'react-router-dom';
+import Home from '../pages/Home';
+import Other from '../pages/Other';
+import Project from '../pages/Project';
+
 
 const Content = () => {
     return(
         <main className="Content">
             <div className="content-wrap">
-                <Project />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/project" element={<Project />} />
+                    <Route path="/other" element={<Other />} />
+                </Routes>
             </div>
         </main>
     );

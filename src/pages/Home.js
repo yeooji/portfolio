@@ -1,8 +1,12 @@
 const Home = () => {
     return (
-      <div className="Home">
-        <h2>Home</h2>
-      </div>
+      <article className="Home">
+        <div className="page-info">
+            <h2 className="main-title">Home</h2>
+            {/* <em className="main-description"></em> */}
+        </div>
+        
+      </article>
     );
   };
   
