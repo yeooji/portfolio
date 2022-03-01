@@ -1,10 +1,8 @@
-import { Link } from "react-router-dom";
-
 const Project = () => {
     return (
         <article className="Project">
             <div className="page-info">
-                <h2 className="main-title">Project</h2>
+                <h2 className="main-title">💻</h2>
                 <em className="main-description">주요 프로젝트를 오름차순으로 나열했습니다.</em>
             </div>
 
@@ -30,9 +28,7 @@ const Project = () => {
                                 <li>CodeIngniter</li>
                             </ul>
                         </div>
-                        <div className="project-visual">
-                            이미지
-                        </div>
+                        <div className="project-visual"></div>
                     </li>
 
                     <li className="project-item">
@@ -48,9 +44,7 @@ const Project = () => {
                                 <li>CodeIngniter</li>
                             </ul>
                         </div>
-                        <div className="project-visual">
-                            이미지
-                        </div>
+                        <div className="project-visual"></div>
                     </li>
 
                     <li className="project-item">
@@ -66,9 +60,7 @@ const Project = () => {
                                 <li>CodeIngniter</li>
                             </ul>
                         </div>
-                        <div className="project-visual">
-                            이미지
-                        </div>
+                        <div className="project-visual"></div>
                     </li>
 
                     <li className="project-item">
@@ -84,9 +76,7 @@ const Project = () => {
                                 <li>CodeIngniter</li>
                             </ul>
                         </div>
-                        <div className="project-visual">
-                            이미지
-                        </div>
+                        <div className="project-visual"></div>
                     </li>
                 </ul>
             </section>
@@ -109,9 +99,7 @@ const Project = () => {
                                 <li>작성중</li>
                             </ul>
                         </div>
-                        <div className="project-visual">
-                            이미지
-                        </div>
+                        <div className="project-visual"></div>
                     </li>
 
                     <li className="project-item">
@@ -126,9 +114,7 @@ const Project = () => {
                                 <li>작성중</li>
                             </ul>
                         </div>
-                        <div className="project-visual">
-                            이미지
-                        </div>
+                        <div className="project-visual"></div>
                     </li>
 
                     <li className="project-item">
@@ -143,9 +129,7 @@ const Project = () => {
                                 <li>작성중</li>
                             </ul>
                         </div>
-                        <div className="project-visual">
-                            이미지
-                        </div>
+                        <div className="project-visual"></div>
                     </li>
                 </ul>
             </section>

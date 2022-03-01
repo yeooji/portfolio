@@ -2,16 +2,16 @@ const Other = () => {
     return (
       <article className="Other">
         <div className="page-info">
-          <h2 className="main-title">Other</h2>
+          <h2 className="main-title">🕹️</h2>
           <em className="main-description">비상업적으로 제작한 개인 사이드 프로젝트 입니다. 클릭시 해당 GitHub로 연결됩니다.</em>
         </div>
 
-        <section className="">
+        <section>
 
           <ul className="project-list">
 
             <li className="project-item">
-              <div className="project-item-inner">
+              <a href="https://github.com/yeooji/portfolio" target="_blank" className="project-item-inner">
                 <div className="project-top">
                   <div className="folder">
                     <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder"><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
@@ -20,7 +20,7 @@ const Other = () => {
 
                 <div className="project-description">
                   <h3>포트폴리오</h3>
-                  <p>개인 웹 포트폴리오 입니다.</p>
+                  <p>React와 SCSS를 이용한 개인 포트폴리오를 구현합니다.</p>
                 </div>
 
                 <div className="project-tech">
@@ -29,11 +29,11 @@ const Other = () => {
                     <li>SCSS</li>
                   </ul>
                 </div>
-              </div>
+              </a>
             </li>
 
             <li className="project-item">
-              <div className="project-item-inner">
+              <a href="" target="_blank" className="project-item-inner">
                 <div className="project-top">
                   <div className="folder">
                     <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder"><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
@@ -53,11 +53,11 @@ const Other = () => {
                     <li>Animation</li>
                   </ul>
                 </div>
-              </div>
+              </a>
             </li>
 
             <li className="project-item">
-              <div className="project-item-inner">
+              <a href="" target="_blank" className="project-item-inner">
                 <div className="project-top">
                   <div className="folder">
                     <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder"><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
@@ -77,11 +77,11 @@ const Other = () => {
                     <li>Animation</li>
                   </ul>
                 </div>
-              </div>
+              </a>
             </li>
 
             <li className="project-item">
-              <div className="project-item-inner">
+              <a href="" target="_blank" className="project-item-inner">
                 <div className="project-top">
                   <div className="folder">
                     <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder"><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
@@ -100,7 +100,7 @@ const Other = () => {
                     <li>jQuery</li>
                   </ul>
                 </div>
-              </div>
+              </a>
             </li>
 
           </ul>

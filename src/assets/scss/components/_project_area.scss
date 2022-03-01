@@ -4,7 +4,7 @@
 
         & + .group {
             padding-top: 40px;
-            border-top: 1px solid #eee;
+            /* border-top: 1px solid #eee; */
         }
 
         .group-title {
@@ -14,10 +14,10 @@
             .title {
                 color: #1c7ed6;
                 transition: inherit;
-                font-size: 1.4rem;
+                font-size: 1.5rem;
                 margin-top: 0px;
                 margin-bottom: 4px;
-                /* font-weight: normal; */
+                font-weight: normal;
             }
         }
     }
@@ -35,7 +35,10 @@
             box-sizing: border-box;
 
             .project-info {
-                /* border: 1px solid #ddd; */
+                display: flex;
+                justify-content: space-between;
+                -webkit-box-align: center;
+                flex-direction: column;
                 
                 .title {
                     display: inline-block;
@@ -119,7 +122,8 @@
 
             .project-visual {
                 /* border: 1px solid #ddd; */
-                background-color: #ddd;
+                background-color: #e7f5ff56;
+                
             }
         }
     }

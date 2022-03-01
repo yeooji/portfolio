@@ -18,7 +18,6 @@
             }
 
             .project-item-inner {
-                box-shadow: 0 10px 30px -15px var(--navy-shadow);
                 display: flex;
                 -webkit-box-pack: justify;
                 justify-content: space-between;
@@ -45,6 +44,14 @@
                         width: 35px;
                         height: 35px;
                     }
+                }
+            }
+
+            .project-description {
+                p {
+                    margin-top: 8px;
+                    font-size: 0.9em;
+                    color: #464646;
                 }
             }
 

@@ -27,9 +27,6 @@
     } */
 
     .chat-buble {
-      /* position: relative;
-      top: 8px;
-      left: 60px; */
       display: block;
       width: 130px;
       line-height: 30px;
@@ -63,7 +60,7 @@
     }
 
     a {
-      display: block;
+      display: inline-block;
       position: relative;
       padding-bottom: 5px;
       font-size: 0.9rem;
@@ -81,6 +78,14 @@
       &:hover::after {
         width: 100%;
       }
+    }
+
+    svg {
+      width: 15px;
+      height: 15px;
+      vertical-align: middle;
+      color: #333;
+      margin-left: 5px;
     }
   }
 }

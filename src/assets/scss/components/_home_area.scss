@@ -1,0 +1,55 @@
+.Home {
+
+    .resume-info {
+        margin-bottom: 30px;
+
+        .label-emoji {
+            margin-right: 6px;
+        }
+        .label-title {
+            /* 중복 */
+            display: inline-block;
+            color: #495057;
+            transition: inherit;
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+    }
+
+    .experience {
+        margin-bottom: 50px;
+
+        .experience-item {
+            display: grid;
+            grid-template-columns: 300px 2fr;
+            border-top: 1px solid #ddd;
+            
+            &:last-child {
+                border-bottom: 1px solid #ddd;
+            }
+            padding: 25px 0;
+
+            span {
+                display: block;
+            }
+        }
+    }
+
+
+    .skill {
+
+        .skill-list {
+
+            li {
+                display: inline-block;
+                font-family: "Source Sans Pro",sans-serif;
+                padding: 4px 14px;
+                border-radius: 100px;
+                border: solid 1px #D8E0E7;
+                /* border: solid 1px #e7f5ff; */
+                font-size: 0.85em;
+                margin: 0 8px 14px 0;
+            }
+        }
+    }
+}

@@ -95,9 +95,6 @@ table caption {
 }
 
 .Header .logo .chat-buble {
-  /* position: relative;
-      top: 8px;
-      left: 60px; */
   display: block;
   width: 130px;
   line-height: 30px;
@@ -131,7 +128,7 @@ table caption {
 }
 
 .Header .gnb li a {
-  display: block;
+  display: inline-block;
   position: relative;
   padding-bottom: 5px;
   font-size: 0.9rem;
@@ -151,6 +148,14 @@ table caption {
 
 .Header .gnb li a:hover::after {
   width: 100%;
+}
+
+.Header .gnb li svg {
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  color: #333;
+  margin-left: 5px;
 }
 
 .Content .content-wrap {
@@ -188,9 +193,59 @@ table caption {
   color: #bbb;
 }
 
+.Home .resume-info {
+  margin-bottom: 30px;
+}
+
+.Home .resume-info .label-emoji {
+  margin-right: 6px;
+}
+
+.Home .resume-info .label-title {
+  /* 중복 */
+  display: inline-block;
+  color: #495057;
+  -webkit-transition: inherit;
+  transition: inherit;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.Home .experience {
+  margin-bottom: 50px;
+}
+
+.Home .experience .experience-item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px 2fr;
+      grid-template-columns: 300px 2fr;
+  border-top: 1px solid #ddd;
+  padding: 25px 0;
+}
+
+.Home .experience .experience-item:last-child {
+  border-bottom: 1px solid #ddd;
+}
+
+.Home .experience .experience-item span {
+  display: block;
+}
+
+.Home .skill .skill-list li {
+  display: inline-block;
+  font-family: "Source Sans Pro",sans-serif;
+  padding: 4px 14px;
+  border-radius: 100px;
+  border: solid 1px #D8E0E7;
+  /* border: solid 1px #e7f5ff; */
+  font-size: 0.85em;
+  margin: 0 8px 14px 0;
+}
+
 .Project .group + .group {
   padding-top: 40px;
-  border-top: 1px solid #eee;
+  /* border-top: 1px solid #eee; */
 }
 
 .Project .group .group-title {
@@ -202,10 +257,10 @@ table caption {
   color: #1c7ed6;
   -webkit-transition: inherit;
   transition: inherit;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   margin-top: 0px;
   margin-bottom: 4px;
-  /* font-weight: normal; */
+  font-weight: normal;
 }
 
 .Project .project-list .project-item {
@@ -223,7 +278,17 @@ table caption {
 }
 
 .Project .project-list .project-item .project-info {
-  /* border: 1px solid #ddd; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .Project .project-list .project-item .project-info .title {
@@ -320,7 +385,7 @@ table caption {
 
 .Project .project-list .project-item .project-visual {
   /* border: 1px solid #ddd; */
-  background-color: #ddd;
+  background-color: #e7f5ff56;
 }
 
 .Other .project-list {
@@ -347,8 +412,6 @@ table caption {
 }
 
 .Other .project-list .project-item .project-item-inner {
-  -webkit-box-shadow: 0 10px 30px -15px var(--navy-shadow);
-          box-shadow: 0 10px 30px -15px var(--navy-shadow);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -389,6 +452,12 @@ table caption {
 .Other .project-list .project-item .project-top .folder svg {
   width: 35px;
   height: 35px;
+}
+
+.Other .project-list .project-item .project-description p {
+  margin-top: 8px;
+  font-size: 0.9em;
+  color: #464646;
 }
 
 .Other .project-list .project-item .project-tech {
