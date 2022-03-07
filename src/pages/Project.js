@@ -4,7 +4,7 @@ import matenetworks from '../assets/images/list_overview01.png';
 
 const Project = () => {
 
-    const checkActiveItem = () => {
+    /* const checkActiveItem = () => {
         const listItem = document.querySelectorAll('.project-item');
 
         Array.prototype.forEach.call(listItem, listItem => {
@@ -35,7 +35,7 @@ const Project = () => {
 
     window.addEventListener('scroll', function() {
         checkActiveItem();
-    });
+    }); */
 
     return (
         <article className="Project">

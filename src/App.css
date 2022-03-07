@@ -287,6 +287,13 @@ table caption {
   font-weight: normal;
 }
 
+.Project .project-list {
+  /* .active {
+            opacity: 1;
+            transform: translate(0, 0);
+        } */
+}
+
 .Project .project-list .project-item {
   display: -ms-grid;
   display: grid;
@@ -299,11 +306,9 @@ table caption {
   border-left: 1px dashed #dee2e6;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  opacity: 0;
-  -webkit-transform: translate(0, 200px);
-          transform: translate(0, 200px);
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  /* opacity: 0;
+            transform: translate(0, 200px);
+            transition: all 0.5s; */
 }
 
 .Project .project-list .project-item .project-info {
@@ -425,12 +430,6 @@ table caption {
 
 .Project .project-list .project-item .project-visual img {
   max-width: 100%;
-}
-
-.Project .project-list .active {
-  opacity: 1;
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
 }
 
 .Other .project-list {

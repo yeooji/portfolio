@@ -33,9 +33,9 @@
             border-left: 1px dashed #dee2e6;
             box-sizing: border-box;
 
-            opacity: 0;
+            /* opacity: 0;
             transform: translate(0, 200px);
-            transition: all 0.5s;
+            transition: all 0.5s; */
 
             .project-info {
                 display: flex;
@@ -140,10 +140,10 @@
             }
         }
 
-        .active {
+        /* .active {
             opacity: 1;
             transform: translate(0, 0);
-        }
+        } */
     }
 
 }
