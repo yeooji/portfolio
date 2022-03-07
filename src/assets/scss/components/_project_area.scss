@@ -13,7 +13,6 @@
             
             .title {
                 color: #1c7ed6;
-                transition: inherit;
                 font-size: 1.5rem;
                 margin-top: 0px;
                 margin-bottom: 4px;
@@ -34,6 +33,10 @@
             border-left: 1px dashed #dee2e6;
             box-sizing: border-box;
 
+            opacity: 0;
+            transform: translate(0, 200px);
+            transition: all 0.5s;
+
             .project-info {
                 display: flex;
                 justify-content: space-between;
@@ -43,11 +46,20 @@
                 .title {
                     display: inline-block;
                     color: #495057;
-                    transition: inherit;
                     font-size: 1.2rem;
-                    font-weight: 400;
+                    font-weight: 500;
                     margin-top: 0px;
                     margin-bottom: 4px;
+
+                    .link {
+                        transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+                        &:hover {
+                            color: #1c7ed6;
+                            transform: color;
+                        }
+                        
+                    }
                 }
                 .period {
                     margin: 0px 0px 16px;
@@ -58,20 +70,18 @@
                     overflow: visible;
                     text-align: left;
                     font-size: 0.9rem;
-                    font-weight: 300;
+                    font-weight: 100;
                     line-height: 1.5;
                     word-break: normal;
                 }
                 .explan {
                     margin: 8px 0px 0px;
-                    transition: inherit;
-                    color: var(--textNormal);
                     white-space: normal;
                     text-overflow: clip;
                     overflow: visible;
                     text-align: left;
                     font-size: 0.9rem;
-                    font-weight: 300;
+                    font-weight: normal;
                     line-height: 1.5;
                     word-break: normal;
                 }                
@@ -86,7 +96,7 @@
                         padding-top: 2px;
                         padding-bottom: 2px;
                         font-size: 0.9rem;
-                        font-weight: 300;
+                        font-weight: 100;
             
                         &::before {
                             position: absolute;
@@ -111,7 +121,7 @@
                         margin: 2px;
                         padding: 4px 10px;
                         font-size: 0.8rem;
-                        font-weight: 300;
+                        font-weight: 100;
                         background-color: #e7f5ff;
                         color: #1c7ed6;
                         border-radius: 4px;
@@ -122,9 +132,17 @@
 
             .project-visual {
                 /* border: 1px solid #ddd; */
-                background-color: #e7f5ff56;
+                /* background-color: #e7f5ff56; */
                 
+                img {
+                    max-width: 100%;
+                }
             }
+        }
+
+        .active {
+            opacity: 1;
+            transform: translate(0, 0);
         }
     }
 
