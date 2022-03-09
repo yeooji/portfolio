@@ -2,7 +2,7 @@ const Home = () => {
     return (
       <article className="Home">
         <div className="page-info">
-            <h2 className="main-title">🏡</h2>
+            <h2 className="main-title">🏡<span className="screen-out">Home</span></h2>
         </div>
         
         <section className="experience">
@@ -39,26 +39,36 @@ const Home = () => {
         <section className="skill">
           <div className="resume-info">
             <h3 className="title">Skills</h3>
+            {/* <div>
+              <span>?</span>
+              <ul>
+                <li>3 : 실무 프로젝트 사용 경험이 있습니다.</li>
+                <li>2 : 개인 프로젝트 및 실습 경험이 있습니다.</li>
+                <li>1 : 이론 </li>
+              </ul>
+            </div> */}
           </div>
           
           <div>
             <ul className="skill-list">
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>Sass(SCSS)</li>
-              <li>JavaScript(ES6+)</li>
-              <li>jQuery</li>
-              <li>React</li>
-              <li>Bootstrap</li>
-              <li>CodeIgniter</li>
+              <li className="level-3">HTML5</li>
+              <li className="level-3">CSS3</li>
+              <li className="level-2">Sass(SCSS)</li>
+              <li className="level-2">JavaScript</li>
+              <li className="level-2">React.js</li>
+              {/* <li className="level-1">Vue.js</li> */}
+              <li className="level-3">jQuery</li>
+              <li className="level-3">Bootstrap</li>
+              <li className="level-3">CodeIgniter</li>
+              {/* <li className="level-2">AWS EC2</li> */}
+              <li className="level-3">Git</li>
             </ul>
             <ul className="skill-list">
-              <li>Photoshop</li>
-              <li>Illustrator</li>
-              <li>XD</li>
+              <li className="level-3">Photoshop</li>
+              <li className="level-3">Illustrator</li>
+              <li className="level-3">XD</li>
             </ul>
           </div>
-
         </section>
       </article>
     );

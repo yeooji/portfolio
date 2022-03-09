@@ -6,7 +6,7 @@ import Project from '../pages/Project';
 
 const Content = () => {
     return(
-        <main className="Content">
+        <main id='main' className="Content">
             <div className="content-wrap">
                 <Routes>
                     <Route path="/" element={<Home />} />

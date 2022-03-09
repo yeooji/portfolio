@@ -59,6 +59,24 @@ table caption {
   text-indent: -9999px;
 }
 
+.skip-nav {
+  position: fixed;
+  top: -60px;
+  width: 100%;
+  line-height: 40px;
+  font-size: 1em;
+  text-align: center;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transition: top 0.3s;
+  transition: top 0.3s;
+  z-index: 1000;
+}
+
+.skip-nav:focus, .skip-nav:active {
+  top: 0;
+}
+
 .Header {
   width: 100%;
   padding: 30px 0;
@@ -83,15 +101,6 @@ table caption {
 .Header .logo {
   display: inline-block;
   position: relative;
-  /* a {
-      display: block;
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      overflow: hidden;
-      background: url(./assets/emoji.png) no-repeat 50% 16%;
-      background-size: 70px;
-    } */
 }
 
 .Header .logo .chat-buble {
@@ -103,7 +112,7 @@ table caption {
   text-align: center;
   border-radius: 15px;
   background-color: #0c82fe;
-  color: #fff;
+  color: #ffffff;
   z-index: 100;
 }
 
@@ -141,7 +150,7 @@ table caption {
   left: 0;
   width: 0;
   height: 1px;
-  background-color: #000;
+  background-color: #000000;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
@@ -154,7 +163,7 @@ table caption {
   width: 15px;
   height: 15px;
   vertical-align: middle;
-  color: #333;
+  color: #333333;
   margin-left: 5px;
 }
 
@@ -190,14 +199,14 @@ table caption {
 .Footer {
   width: 100%;
   padding: 30px 0;
-  font-size: 0.5em;
+  font-size: 0.7em;
 }
 
 .Footer .footer-wrap {
   width: 90%;
   max-width: 1000px;
   margin: 0 auto;
-  color: #bbb;
+  color: #bbbbbb;
 }
 
 .Home .resume-info {
@@ -227,12 +236,12 @@ table caption {
   display: grid;
   -ms-grid-columns: 300px 2fr;
       grid-template-columns: 300px 2fr;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #dddddd;
   padding: 30px 0;
 }
 
 .Home .experience .experience-item:last-child {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #dddddd;
 }
 
 .Home .experience .experience-item .company-name {
@@ -264,14 +273,37 @@ table caption {
   padding: 4px 14px;
   border-radius: 100px;
   border: solid 1px #D8E0E7;
-  /* border: solid 1px #e7f5ff; */
   font-size: 0.85em;
   margin: 0 8px 14px 0;
 }
 
+.Home .skill .skill-list li::before {
+  content: '';
+  position: relative;
+  display: inline-block;
+  top: 50%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  margin-right: 4px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.Home .skill .skill-list .level-1::before {
+  background-color: #D8E0E7;
+}
+
+.Home .skill .skill-list .level-2::before {
+  background-color: #cc864d;
+}
+
+.Home .skill .skill-list .level-3::before {
+  background-color: #4992d3;
+}
+
 .Project .group + .group {
   padding-top: 40px;
-  /* border-top: 1px solid #eee; */
 }
 
 .Project .group .group-title {

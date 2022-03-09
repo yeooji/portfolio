@@ -1,7 +1,3 @@
-import icon_link from '../assets/images/hyperlink.png';
-
-import matenetworks from '../assets/images/list_overview01.png';
-
 const Project = () => {
 
     /* const checkActiveItem = () => {
@@ -40,7 +36,7 @@ const Project = () => {
     return (
         <article className="Project">
             <div className="page-info">
-                <h2 className="main-title">💻</h2>
+                <h2 className="main-title">💻<span className="screen-out">Project</span></h2>
                 <em className="main-description">주요 프로젝트를 오름차순으로 나열했습니다.</em>
             </div>
 
@@ -54,7 +50,7 @@ const Project = () => {
                         <div className="project-info">
                             <h3 className="title">
                                 <a href='https://on.town/' target='_blank' className='link'>
-                                    <img src={icon_link} width="16" height="16" alt='link' /> 온타운
+                                    <img src={process.env.PUBLIC_URL + `/assets/images/hyperlink.png`} width="16" height="16" alt='link'/> 온타운
                                 </a>
                             </h3>
                             
@@ -72,7 +68,7 @@ const Project = () => {
                             </ul>
                         </div>
                         <div className="project-visual">
-                            <img src={matenetworks} alt="visual-img" />
+                            <img src={process.env.PUBLIC_URL + `/assets/images/list_overview01.png`} />
                         </div>
                     </li>
 
@@ -80,7 +76,7 @@ const Project = () => {
                         <div className="project-info">
                             <h3 className="title">
                                 <a href='https://ircanvas.hanstu.co.kr/page/intro' target='_blank' className='link'>
-                                    <img src={icon_link} width="16" height="16" alt='link' /> IR Canvas
+                                    <img src={process.env.PUBLIC_URL + `/assets/images/hyperlink.png`} width="16" height="16" alt='link'/> IR Canvas
                                 </a>
                             </h3>
                             <p className="period">2021년 4월 - 2021년 7월</p>
@@ -94,7 +90,7 @@ const Project = () => {
                             </ul>
                         </div>
                         <div className="project-visual">
-                            <img src={matenetworks} alt="visual-img" />
+                            <img src={process.env.PUBLIC_URL + `/assets/images/list_overview01.png`} />
                         </div>
                     </li>
 
@@ -102,7 +98,7 @@ const Project = () => {
                         <div className="project-info">
                             <h3 className="title">
                                 <a href='https://www.hanstu.co.kr/page/news' target='_blank' className='link'>
-                                    <img src={icon_link} width="16" height="16" alt='link' /> 한국 스타트업 투자정보
+                                    <img src={process.env.PUBLIC_URL + `/assets/images/hyperlink.png`} width="16" height="16" alt='link'/> 한국 스타트업 투자정보
                                 </a>
                             </h3>
                             <p className="period">2020년 9월 - 2021년 3월</p>
@@ -116,14 +112,13 @@ const Project = () => {
                             </ul>
                         </div>
                         <div className="project-visual">
-                            <img src={matenetworks} alt="visual-img" />
+                            <img src={process.env.PUBLIC_URL + `/assets/images/list_overview01.png`} />
                         </div>
                     </li>
 
                     <li className="project-item">
                         <div className="project-info">
                             <h3 className="title">사내 백오피스</h3>
-                            {/* <p className="period">-</p> */}
                             <p className="explan">테크밸류에서 제공하는 웹 서비스의 데이터 관리 사이트</p>
                             <ul className="performance">
                                 <li>기업 관리 및 검색 기능 개발</li>
@@ -135,7 +130,7 @@ const Project = () => {
                             </ul>
                         </div>
                         <div className="project-visual">
-                            <img src={matenetworks} alt="visual-img" />
+                            <img src={process.env.PUBLIC_URL + `/assets/images/list_overview01.png`} />
                         </div>
                     </li>
                 </ul>
@@ -151,7 +146,7 @@ const Project = () => {
                         <div className="project-info">
                             <h3 className="title">
                                 <a href='http://www.jayhue.co.kr/' target='_blank' className='link'>
-                                    <img src={icon_link} width="16" height="16" alt='link' /> 제이휴
+                                    <img src={process.env.PUBLIC_URL + `/assets/images/hyperlink.png`} width="16" height="16" alt='link'/> 제이휴
                                 </a>
                             </h3>
                             <p className="period">2019년 7월 - 2019년 9월</p>
@@ -165,7 +160,7 @@ const Project = () => {
                             </ul>
                         </div>
                         <div className="project-visual">
-                            <img src={matenetworks} alt="visual-img" />
+                            <img src={process.env.PUBLIC_URL + `/assets/images/list_overview01.png`} />
                         </div>
                     </li>
 
@@ -173,7 +168,7 @@ const Project = () => {
                         <div className="project-info">
                             <h3 className="title">
                                 <a href='https://www.matembox.co.kr/' target='_blank' className='link'>
-                                    <img src={icon_link} width="16" height="16" alt='link' /> 메이트엠박스
+                                    <img src={process.env.PUBLIC_URL + `/assets/images/hyperlink.png`} width="16" height="16" alt='link'/> 메이트엠박스
                                 </a>
                             </h3>
                             <p className="period">2018년 4월 - 2018년 7월</p>
@@ -187,7 +182,7 @@ const Project = () => {
                             </ul>
                         </div>
                         <div className="project-visual">
-                            <img src={matenetworks} alt="visual-img" />
+                            <img src={process.env.PUBLIC_URL + `/assets/images/list_overview01.png`} />
                         </div>
                     </li>
 
@@ -195,7 +190,7 @@ const Project = () => {
                         <div className="project-info">
                             <h3 className="title">
                                 <a href='http://www.matenetworks.co.kr/' target='_blank' className='link'>
-                                    <img src={icon_link} width="16" height="16" alt='link' /> 메이트네트웍스
+                                    <img src={process.env.PUBLIC_URL + `/assets/images/hyperlink.png`} width="16" height="16" alt='link'/> 메이트네트웍스
                                 </a>
                             </h3>
                             <p className="period">2017년 9월 - 2017년 11월</p>
@@ -209,7 +204,7 @@ const Project = () => {
                             </ul>
                         </div>
                         <div className="project-visual">
-                            <img src={matenetworks} alt="visual-img" />
+                            <img src={process.env.PUBLIC_URL + `/assets/images/list_overview01.png`} />
                         </div>
                     </li>
                 </ul>

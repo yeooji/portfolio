@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <BrowserRouter>
+      <a href='#main' className='skip-nav'>본문 바로가기</a>
       <div className="App">
         <Header/>
         <Content/>

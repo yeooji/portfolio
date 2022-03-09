@@ -4,7 +4,6 @@
 
         & + .group {
             padding-top: 40px;
-            /* border-top: 1px solid #eee; */
         }
 
         .group-title {
@@ -12,7 +11,7 @@
             margin-bottom: 32px;
             
             .title {
-                color: #1c7ed6;
+                color: $booking-color3;
                 font-size: 1.5rem;
                 margin-top: 0px;
                 margin-bottom: 4px;
@@ -30,7 +29,7 @@
             min-height: 290px;
             margin-bottom: 48px;
             padding-left: 16px;
-            border-left: 1px dashed #dee2e6;
+            border-left: 1px dashed $booking-color14;
             box-sizing: border-box;
 
             /* opacity: 0;
@@ -45,7 +44,7 @@
                 
                 .title {
                     display: inline-block;
-                    color: #495057;
+                    color: $booking-color15;
                     font-size: 1.2rem;
                     font-weight: 500;
                     margin-top: 0px;
@@ -55,7 +54,7 @@
                         transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 
                         &:hover {
-                            color: #1c7ed6;
+                            color: $booking-color3;
                             transform: color;
                         }
                         
@@ -64,7 +63,7 @@
                 .period {
                     margin: 0px 0px 16px;
                     transition: inherit;
-                    color: #868e96;
+                    color: $booking-color16;
                     white-space: normal;
                     text-overflow: clip;
                     overflow: visible;
@@ -103,7 +102,7 @@
                             left: 0px;
                             display: inline-block;
                             content: "•";
-                            color: #578cdc; 
+                            color: $booking-color17; 
                         }
                     }
                 }
@@ -123,7 +122,7 @@
                         font-size: 0.8rem;
                         font-weight: 100;
                         background-color: #e7f5ff;
-                        color: #1c7ed6;
+                        color: $booking-color3;
                         border-radius: 4px;
                         line-height: 1.3;
                     }

@@ -2,12 +2,11 @@ const Other = () => {
     return (
       <article className="Other">
         <div className="page-info">
-          <h2 className="main-title">🕹️</h2>
+          <h2 className="main-title">🕹️<span className="screen-out">Other</span></h2>
           <em className="main-description">비상업적으로 진행한 개인 프로젝트 입니다. 클릭시 해당 GitHub로 연결됩니다.</em>
         </div>
 
         <section>
-
           <ul className="project-list">
 
             <li className="project-item">
@@ -74,7 +73,7 @@ const Other = () => {
               </a>
             </li>
 
-            <li className="project-item">
+            {/* <li className="project-item">
               <a href="https://github.com/yeooji/Lottie.js" target="_blank" rel="noopener noreferrer" className="project-item-inner">
                 <div className="project-top">
                   <div className="folder">
@@ -143,7 +142,7 @@ const Other = () => {
                   </ul>
                 </div>
               </a>
-            </li>
+            </li> */}
 
           </ul>
         </section>
