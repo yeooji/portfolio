@@ -1,7 +1,10 @@
 // font
 $font-default: -apple-system, BlinkMacSystemFont, helvetica, Apple SD Gothic Neo, sans-serif;
 
-// size
-$m-padding: 18px;
-$place-header-height: 48px;
-$place-tab-height: 46px;
+// Breakpoints
+$breakpoint-mobile: 335px;
+$breakpoint-tablet: 758px;
+$breakpoint-desktop: 1024px;
+
+// moving
+$transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);

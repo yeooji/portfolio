@@ -1,5 +1,47 @@
 .Home {
 
+    .bio {
+        margin-bottom: 80px;
+
+        .title {
+            margin-bottom: 30px;
+            font-weight: 300;
+            font-size: 1.7em;
+
+            .bold-point {
+                font-weight: bold;
+            }
+        }
+
+        .explanation {
+            white-space: normal;
+            text-overflow: clip;
+            overflow: visible;
+            text-align: left;
+            font-size: 0.9em;
+            font-weight: 300;
+            line-height: 1.5;
+            word-break: normal;
+        }
+
+        .link {
+            margin-top: 20px;
+            text-decoration: underline;
+            font-size: 0.8em;
+            font-weight: 300;
+
+            a {
+                display: inline-block;
+                margin-right: 16px;
+                transition: $transition;
+                
+                &:hover {
+                    color: $booking-color9;
+                }
+            }
+        }
+    }
+
     .resume-info {
         margin-bottom: 30px;
 
@@ -54,6 +96,58 @@
 
     .skill {
 
+        .title {display: inline-block;}
+
+        .skill-level {
+            position: relative;
+            display: inline-block;
+
+            img {
+                position: relative;
+                top: -16px;
+                margin-left: 4px;
+                cursor: pointer;
+
+                &:hover ~ .skill-level-item {
+                    opacity: 1;
+                    transform: opacity .1s;
+                }
+            }
+
+            .skill-level-item {
+                position: absolute;
+                top: -30px;
+                left: 30px;
+                min-width: 200px;
+                padding: 8px;
+                border-radius: 4px;
+                background-color: $booking-color19;
+                transition: $transition;
+                opacity: 0;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+                li {
+                    font-size: 0.7em;
+                    padding: 2px 0;
+
+                    &::before {
+                        content: '';
+                        position: relative;
+                        display: inline-block;
+                        top: 50%;
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50%;
+                        margin-right: 8px;
+                        transform: translateY(-50%);
+                    }
+                }
+                .level-1::before {background-color: $booking-color10;}
+                .level-2::before {background-color: $booking-color11;}
+                .level-3::before {background-color: $booking-color12;}
+            }
+        }
+
         .skill-list {
 
             li {
@@ -83,3 +177,30 @@
         }
     }
 }
+
+@include mobile {
+    .Home {
+        .experience {
+            .experience-item {
+                /* background-color: red; */
+                grid-template-columns: 1fr;
+
+                .position {
+                    margin-top: 8px;
+                }
+            }
+        }
+    } 
+  }
+  
+  @include tablet {
+    .experience-item {
+        /* background-color: rgb(76, 0, 255); */
+    }
+  }
+  
+  @include desktop {
+    .experience-item {
+        /* background-color: rgb(0, 255, 85); */
+    }
+  }
