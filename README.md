@@ -1,8 +1,11 @@
 # portfolio
 React와 SCSS를 이용한 개인 포트폴리오를 구현했습니다.
 
+### Debug
+메인 접근시 '/' 바로 이동오류 (해결 진행중)
+
 ### Link
--
+<a href="https://yeooji.github.io/portfolio/">링크 이동</>
 
 ## File Tree
 ```
@@ -15,11 +18,15 @@ React와 SCSS를 이용한 개인 포트폴리오를 구현했습니다.
 │   ├── components
 │   │   ├── Content.js
 │   │   ├── Footer.js
-│   │   └── Header.js
+│   │   ├── Header.js
+│   │   ├── OtherList.js
+│   │   ├── ProjectList.js
+│   │   └── ScrollTop.js
 │   ├── pages
 │   │   ├── Home.js
 │   │   ├── Other.js
-│   │   └── Project.js
+│   │   ├── Project.js
+│   │   └── ProjectView.js
 │   ├── scss/
 │   ├── App.css
 │   ├── App.css.map
