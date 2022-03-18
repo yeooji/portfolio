@@ -5,7 +5,7 @@ React와 SCSS를 이용한 개인 포트폴리오를 구현했습니다.
 메인 접근시 '/' 바로 이동오류 (해결 진행중)
 
 ### Link
-<a href="https://yeooji.github.io/portfolio/">링크 이동</>
+<a href="https://yeooji.github.io/portfolio/">링크 이동</a>
 
 ## File Tree
 ```
