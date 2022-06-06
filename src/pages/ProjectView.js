@@ -2,10 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { ProjectListContext } from "../components/Content";
 
-// TODO : 렌더링 최적화 필요
-
-// 이미지 변경
-// 스타일 변경
+// TODO : 렌더링 최적화 필요, 새로고침 오류
 
 const ProjectView = () => {
     const { id } = useParams();
@@ -25,10 +22,10 @@ const ProjectView = () => {
           );
     
           if (targetProject) {
-            // 일기가 존재할 때
+            // 데이터가 존재할 때
             setData(targetProject);
           } else {
-            // 일기가 없을 때
+            // 데이터가 없을 때
             alert("없는 프로젝트 입니다.");
             navigate("/project", { replace: true });
           }
@@ -36,7 +33,7 @@ const ProjectView = () => {
       }, []);
 
       if (!data) {
-        return <div className="DiaryPage">로딩중입니다...</div>;
+        return <div className="DiaryPage">로딩중입니다...</div>; // ?
       }
 
       //console.log(data);
@@ -73,10 +70,15 @@ const ProjectView = () => {
 
                 <div>
                     <strong>서비스링크</strong>
-                    <a href={data.link} target="_blank" rel="noopener noreferrer">링크 바로가기</a>
+                    {
+                        data.link === "" ? 
+                        <a>-</a> : 
+                        <a href={data.link} target="_blank" rel="noopener noreferrer">링크 바로가기</a>
+                    }
                 </div>
             </div>
 
+            {/* TODO > 클래스 정리 */}
             <div className="aa">
                 <Link to={'/project'} >
                     <span>&#xE000;</span> 뒤로가기
