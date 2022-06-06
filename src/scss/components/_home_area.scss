@@ -182,7 +182,6 @@
     .Home {
         .experience {
             .experience-item {
-                /* background-color: red; */
                 grid-template-columns: 1fr;
 
                 .position {
@@ -191,16 +190,4 @@
             }
         }
     } 
-  }
-  
-  @include tablet {
-    .experience-item {
-        /* background-color: rgb(76, 0, 255); */
-    }
-  }
-  
-  @include desktop {
-    .experience-item {
-        /* background-color: rgb(0, 255, 85); */
-    }
   }

@@ -19,6 +19,13 @@ const Home = () => {
         3년의 마크업 개발과 1년의 프론트 개발 경험이 있으며, 비즈니스 마인드를 가지고 비즈니스에 기여하는 것을 즐거워 합니다.<br/>
         기술도 중요하지만 사용자가 원하는 것이 무엇인지 항상 고민하여 서비스에 적용하는 사람이 되고자 노력합니다.<br/>
         또한, 효율적인 웹 개발에 관심이 많아 새로운 기술에 대한 적극적인 관심이 있습니다.
+
+        {/* 
+        아름다운 인터페이스와 애니메이션을 구현하는 것을 좋아합니다.
+        기술도 중요하지만 사용자가 원하는 것이 무엇인지 항상 고민하여 서비스에 적용하는 사람이 되고자 노력합니다.
+        또한, 효율적인 웹 개발에 관심이 많아 새로운 기술에 대한 적극적인 관심이 있습니다.
+        */}
+
         </p>
         <div className="link">
           <a href="mailto:yeooji_m@naver.com">yeooji_m@naver.com</a>
@@ -32,6 +39,17 @@ const Home = () => {
         </div>
 
         <ul className="experience-list">
+          <li className="experience-item">
+            <div>
+              <span className="company-name">Innored</span>
+              <span className="working-period">2022. 4 - ing</span>
+            </div>
+            <div>
+              <span className="position">Front-end web developer</span>
+              <p className="work-details">디지털 광고 대행사 이노레드에서 디지털 캠페인 및 프로모션 제작과 사내 R&amp;D 프론트엔드 개발을 맡고있습니다.</p>
+            </div>
+          </li>
+
           <li className="experience-item">
             <div>
               <span className="company-name">Techvalue</span>
@@ -53,17 +71,6 @@ const Home = () => {
               <p className="work-details">구글 마케팅 및 채팅 애플리케이션 개발 전문 기업 메이트네트웍스에서<br/>사내 및 계열사 웹/콘텐츠 디자인, 웹사이트 제작/유지 보수, 계열사 이벤트 기획 및 진행을 맡았습니다.</p>
             </div>
           </li>
-
-          {/* <li className="experience-item">
-            <div>
-              <span className="company-name">Ntelecom</span>
-              <span className="working-period">2014. 7 - 2015. 11 (1yrs 5mos)</span>
-            </div>
-            <div>
-              <span className="position">Inbound Telemarketer</span>
-              <p className="work-details">국내 최초 이동통신 선불요금제 알뜰폰 통신사 앤텔레콤에서<br/>이동통신 관련 인바운드 고객상담 및 CS 응대를 맡았습니다.</p>
-            </div>
-          </li> */}
         </ul>
 
       </section>
@@ -73,7 +80,8 @@ const Home = () => {
           <h3 className="title">Skills</h3>
 
           <div className="skill-level">
-            <img src={`/assets/images/icon_question_mark.png`} width="13" alt='question mark'/>
+            <img src={process.env.PUBLIC_URL + `/assets/images/icon_question_mark.png`} width="13" alt='question mark' />
+
             <ul className="skill-level-item">
               <li className="level-3">실무 프로젝트 사용 경험이 있습니다.</li>
               <li className="level-2">개인 프로젝트 및 실습 경험이 있습니다.</li>

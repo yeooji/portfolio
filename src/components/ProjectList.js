@@ -2,12 +2,18 @@ import { Link } from "react-router-dom";
 
 const ProjectList = () => {
 
-    //TODO : 차후 json 처리
-
-    
-
     return (
         <div>
+            {/* <section className="group">
+                <div className="group-title">
+                    <h3 className="title">이노레드</h3>
+                </div>
+
+                <ul className="project-list">
+                    <li className="project-item"></li>
+                </ul>
+            </section> */}
+
             <section className="group">
                 <div className="group-title">
                     <h3 className="title">테크밸류</h3>
@@ -16,11 +22,7 @@ const ProjectList = () => {
                 <ul className="project-list">
                     <li className="project-item">
                         <div className="project-info">
-                            <h3 className="title">
-                                <a href='https://on.town/' target="_blank" rel="noopener noreferrer" className='link'>
-                                    <img src={'/assets/images/hyperlink.png'} width="16" height="16" alt='link'/> 온타운
-                                </a>
-                            </h3>
+                            <h3 className="title">온타운</h3>
                             
                             <p className="period">2021년 7월 - 2021년 9월</p>
                             <p className="explan">메타버스 가상사무실 및 기업 커뮤니티 제공 플랫폼</p>
@@ -53,11 +55,8 @@ const ProjectList = () => {
 
                     <li className="project-item">
                         <div className="project-info">
-                            <h3 className="title">
-                                <a href='https://ircanvas.hanstu.co.kr/page/intro' target="_blank" rel="noopener noreferrer" className='link'>
-                                    <img src={'/assets/images/hyperlink.png'} width="16" height="16" alt='link'/> IR Canvas
-                                </a>
-                            </h3>
+                            <h3 className="title">IR Canvas</h3>
+
                             <p className="period">2021년 4월 - 2021년 7월</p>
                             <p className="explan">온라인 비대면 사업계획서 작성 및 코칭 플랫폼</p>
                             <ul className="performance">
@@ -88,11 +87,8 @@ const ProjectList = () => {
 
                     <li className="project-item">
                         <div className="project-info">
-                            <h3 className="title">
-                                <a href='https://www.hanstu.co.kr/page/news' target="_blank" rel="noopener noreferrer" className='link'>
-                                    <img src={'/assets/images/hyperlink.png'} width="16" height="16" alt='link'/> 한국 스타트업 투자정보
-                                </a>
-                            </h3>
+                            <h3 className="title">한국 스타트업 투자정보</h3>
+
                             <p className="period">2020년 9월 - 2021년 3월</p>
                             <p className="explan">스타트업 대상 투자가치산출 및 기업 정보 제공 플랫폼</p>
                             <ul className="performance">
@@ -123,11 +119,8 @@ const ProjectList = () => {
 
                     <li className="project-item">
                         <div className="project-info">
-                            <h3 className="title">
-                                <a href='https://bo.techvalue.co.kr/' target="_blank" rel="noopener noreferrer" className='link'>
-                                    <img src={'/assets/images/hyperlink.png'} width="16" height="16" alt='link'/> 사내 백오피스
-                                </a>
-                            </h3>
+                            <h3 className="title">사내 백오피스</h3>
+
                             <p className="explan">테크밸류에서 제공하는 웹 서비스의 데이터 관리 사이트</p>
                             <ul className="performance">
                                 <li>Bootstrap을 활용한 UI 개발</li>
@@ -168,7 +161,7 @@ const ProjectList = () => {
                         <div className="project-info">
                             <h3 className="title">
                                 <a href='http://www.jayhue.co.kr/' target="_blank" rel="noopener noreferrer" className='link'>
-                                    <img src={'/assets/images/hyperlink.png'} width="16" height="16" alt='link'/> 제이휴
+                                    <img src={process.env.PUBLIC_URL + `/assets/images/hyperlink.png`} width="16" height="16" alt='link'/> 제이휴
                                 </a>
                             </h3>
                             <p className="period">2019년 7월 - 2019년 9월</p>
@@ -201,7 +194,7 @@ const ProjectList = () => {
                         <div className="project-info">
                             <h3 className="title">
                                 <a href='https://www.matembox.co.kr/' target="_blank" rel="noopener noreferrer" className='link'>
-                                    <img src={'/assets/images/hyperlink.png'} width="16" height="16" alt='link'/> 메이트엠박스
+                                    <img src={process.env.PUBLIC_URL + `/assets/images/hyperlink.png`} width="16" height="16" alt='link'/> 메이트엠박스
                                 </a>
                             </h3>
                             <p className="period">2018년 4월 - 2018년 7월</p>
@@ -233,19 +226,16 @@ const ProjectList = () => {
                         <div className="project-info">
                             <h3 className="title">
                                 <a href='http://www.matenetworks.co.kr/' target="_blank" rel="noopener noreferrer" className='link'>
-                                    <img src={'/assets/images/hyperlink.png'} width="16" height="16" alt='link'/> 메이트네트웍스
+                                    <img src={process.env.PUBLIC_URL + `/assets/images/hyperlink.png`} width="16" height="16" alt='link'/> 메이트네트웍스
                                 </a>
                             </h3>
                             <p className="period">2017년 9월 - 2017년 11월</p>
                             <p className="explan">메이트네트웍스 본사 사이트</p>
                             <ul className="performance">
                                 <li>전체 리뉴얼 참여</li>
-                                <li>전체 리뉴얼 참여</li>
                             </ul>
                             <ul className="tool">
                                 <li>Bootstrap</li>
-                                <li>Bootstrap을 활용한 UI 개발</li>
-                                <li>상세페이지 및 세부 콘텐츠 디자인</li>
                             </ul>
                         </div>
                         <div className="project-visual">

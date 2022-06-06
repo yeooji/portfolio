@@ -9,6 +9,12 @@ const Header = () => {
                     <Link to="/" className="chat-buble">Hello World 👋</Link>
                 </h1>
                 
+                <a className="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+                
                 <nav className="gnb">
                     <ul>
                         <li><Link to="/">Home</Link></li>

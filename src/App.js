@@ -9,6 +9,8 @@ import Content from './components/Content';
 import Footer from './components/Footer';
 
 function App() {
+  
+
   return (
       <BrowserRouter>
         <ScrollTop />

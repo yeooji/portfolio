@@ -129,6 +129,10 @@ table caption {
   margin: 0 auto;
 }
 
+.Header .mobile-menu-btn {
+  display: none;
+}
+
 .Header .logo {
   display: inline-block;
   position: relative;
@@ -198,6 +202,72 @@ table caption {
   margin-left: 5px;
 }
 
+@media (max-width: 757px) {
+  .Header .mobile-menu-btn {
+    display: block;
+    position: relative;
+    z-index: 1000;
+  }
+  .Header .mobile-menu-btn span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #333333;
+    -webkit-transition: .25s margin .25s, .25s transform;
+    transition: .25s margin .25s, .25s transform;
+  }
+  .Header .mobile-menu-btn span:nth-child(1) {
+    margin-bottom: 9px;
+  }
+  .Header .mobile-menu-btn span:nth-child(3) {
+    margin-top: 9px;
+  }
+  .Header .gnb {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #001cc1;
+    z-index: 500;
+  }
+  .Header .gnb ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .Header .gnb ul li {
+    display: block;
+    color: #ffffff;
+  }
+  .Header .gnb ul li a {
+    font-size: 2.5em;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+  }
+  .Header .gnb ul li a::after {
+    background-color: #ffffff;
+  }
+  .Header .gnb ul li svg {
+    color: #ffffff;
+  }
+}
+
+/* @include tablet {
+  .Header {
+    background-color: rgb(47, 0, 255);
+  }
+}
+
+@include desktop {
+  .Header {
+    background-color: rgb(60, 255, 0);
+  }
+} */
 .Content .content-wrap {
   width: 90%;
   max-width: 1000px;
@@ -445,24 +515,11 @@ table caption {
 
 @media (max-width: 757px) {
   .Home .experience .experience-item {
-    /* background-color: red; */
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
   .Home .experience .experience-item .position {
     margin-top: 8px;
-  }
-}
-
-@media (min-width: 758px) and (max-width: 1023px) {
-  .experience-item {
-    /* background-color: rgb(76, 0, 255); */
-  }
-}
-
-@media (min-width: 1024px) {
-  .experience-item {
-    /* background-color: rgb(0, 255, 85); */
   }
 }
 

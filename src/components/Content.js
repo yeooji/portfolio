@@ -19,14 +19,14 @@ const Content = () => {
 
     useEffect(() => {
         getData();
-      },[]);
+    },[]);
 
     return(
         <ProjectListContext.Provider value={data}>
         <main id='main' className="Content">
             <div className="content-wrap">
                 <Routes>
-                    <Route path="/" element={<Home />} />
+                    <Route path="/" exact={true} element={<Home />} />
                     <Route path="/project" element={<Project />} />
                     <Route exact path='/project/:id' element={<ProjectView />} />
                     <Route path="/other" element={<Other />} />
