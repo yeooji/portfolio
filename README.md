@@ -2,7 +2,6 @@
 React와 SCSS를 이용한 개인 포트폴리오를 구현했습니다.
 
 ### Debug To Do List
-- 메인 접근시 '/' 바로 이동오류
 - ProjectView 새로고침 오류
 
 ### Link
