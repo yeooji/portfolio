@@ -27,6 +27,7 @@ const Content = () => {
             <div className="content-wrap">
                 <Routes>
                     <Route path="/" exact={true} element={<Home />} />
+                    <Route path="/portfolio" element={<Home />} />
                     <Route path="/project" element={<Project />} />
                     <Route exact path='/project/:id' element={<ProjectView />} />
                     <Route path="/other" element={<Other />} />

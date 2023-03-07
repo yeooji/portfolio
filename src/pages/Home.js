@@ -99,11 +99,14 @@ const Home = () => {
             <li className="level-3">jQuery</li>
             <li className="level-3">Bootstrap</li>
             <li className="level-3">CodeIgniter</li>
+            <li className="level-3">Laravel</li>
           </ul>
           <ul className="skill-list">
             <li className="level-3">Photoshop</li>
             <li className="level-3">Illustrator</li>
             <li className="level-3">XD</li>
+            <li className="level-3">Figma</li>
+            <li className="level-3">Zeplin</li>
           </ul>
         </div>
       </section>
